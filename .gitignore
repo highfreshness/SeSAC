@@ -1,0 +1,23 @@
+# data 파일 제외
+*.csv
+*.png
+*.html
+*.xlsx
+*.xls
+*.json
+*.txt
+*.data
+*.zip
+*.jpg
+*.tsv
+*.DS_Store
+*.pdf
+*.pickle
+
+# pycache 파일 제외
+*.pyc
+
+# 특정 폴더 제외
+Python_data/DS/*
+.ipynb_checkpoints/*
+Python_data/.ipynb_checkpoints/*
