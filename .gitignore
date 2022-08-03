@@ -17,14 +17,16 @@
 *.tar
 *.gz
 *.sh
+*.dot
 
 # pycache 파일 제외
 *.pyc
+tmp
 
 # 특정 폴더 제외
 **/cache
 **/__pycache__
 **/.ipynb_checkpoints
 Python_data/DS/
-machinelearning(ml)/mglearn
-machinelearning(ml)/data/
+ml/mglearn
+ml/data/
