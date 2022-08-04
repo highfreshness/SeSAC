@@ -1,3 +1,5 @@
+import warnings
+warnings.simplefilter('ignore')
 from .plot_linear_svc_regularization import plot_linear_svc_regularization
 from .plot_interactive_tree import plot_tree_progressive, plot_tree_partition
 from .plot_animal_tree import plot_animal_tree
