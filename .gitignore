@@ -18,6 +18,7 @@
 *.gz
 *.sh
 *.dot
+*.jpeg
 
 # pycache 파일 제외
 *.pyc
