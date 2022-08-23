@@ -5,7 +5,6 @@ from typing import Optional
 
 BASE_DIR = Path(__file__).resolve().parent  # /app
 
-
 def get_secret(
     key: str,
     default_value: Optional[str] = None,
@@ -19,6 +18,10 @@ def get_secret(
         if default_value:
             return default_value
         raise EnvironmentError(f"Set the {key} environment variable.")
+    
+
+MONGO_DB_NAME = get_secret("MONGO_DB_NAME")
+MONGO_DB_URL = get_secret("MONGO_DB_URL")
 
 
 # if __name__ == "__main__":
