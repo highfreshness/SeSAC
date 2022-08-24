@@ -18,12 +18,24 @@
     </header>
     <center>
         <form id="search_form" action="/input">
-            <input type="search" placeholder="제외할 메뉴" id="menu_input" name="q">
+            <input type="search" placeholder="지역을 입력해주세요" id="menu_input" name="q">
             <button type="submit" class="btn btn-info">출력</button>
         </form>
     </center>
     <main>
-
+        {% if map %}
+        <center>
+            <br>
+            <br>
+            <iframe srcdoc="{{ map }}" height="800" width="1200"></iframe>
+        </center>
+        {% else %}
+        <center>
+            <br>
+            <br>
+            <h3 style=" color: gray"> 검색할 지역을 입력해주세요. </h3>
+        </center>
+        {% endif %}
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
