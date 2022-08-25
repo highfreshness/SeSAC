@@ -22,5 +22,4 @@ class Make_map:
                                                 + '영업시간 : ' + df['business_hours'][idx] + '<br>'\
                                                 + '<a href=' + df['place_url'][idx] + '>' + ' 자세히 보기' + '</a><br>', max_width = 400),
             tooltip=df['stores'][idx]).add_to(m)
-        m.save(str(BASE_DIR / "templates" / "map.html"))
         return m._repr_html_()
